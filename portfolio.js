@@ -14,17 +14,3 @@ function displayAllImages() {
         document.write("<div class='imglist'><img src=" + backgroundImage[i] + "></div>");
     };
 };
-
-function getFiles() {
-    $.ajax(baseUrl).success(function(data) {
-        pictures = [];
-        $(data).find("a[href]").each(function() {
-            var href = $(this).attr('href');
-            if (href.indexOf('.jpg') > 0 || href.indexOf('.png') > 0 || href.indexOf('.jpeg') > 0) {
-                pictures.push(href);
-            }
-        });
-        console.log(pictures.length + " pictures loaded!");
-        changePicture(0);
-    });
-};
