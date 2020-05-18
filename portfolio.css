@@ -1,5 +1,10 @@
 /* GENERAL (HEADER/FOOTER) */
 
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+
+}
+
 .nav>li>a {
 	color: black;
 	padding:0;
@@ -14,6 +19,8 @@
 	position: fixed;
 	z-index: 10;
 	margin-left: 50px;
+	font-size: 20px;
+
 }
 
 .navbar {
@@ -29,6 +36,7 @@
 
 .navbar .navbar-brand {
 	padding-top: 25px;
+	padding-left: 25px;
 }
 
 ::-webkit-scrollbar {
@@ -42,10 +50,17 @@ display: none;
 	text-align: center;
 }
 
+.posters > .row > .imglist {
+	display: inline-block;
+	float: none;
+	padding-right: 30px;
+}
+
 .posters img {
-    width: 100%;
-	max-height: 100vh;
-	height: 100%;
+    width: auto;
+	/* max-height: 100vh; */
+	height: 80vh;
+	display: block;
 }
 
 .posters > .row {
@@ -53,10 +68,7 @@ display: none;
   	white-space: nowrap;
 
 }
-.posters > .row > .col-xs-4 {
-	display: inline-block;
-	float: none;
-}
+
 
 .col-xs-4 {
 	padding-bottom: 20px; 
@@ -71,7 +83,6 @@ display: none;
 	margin-top: 1%;
 	margin-bottom: 2%;
 }
-
 
 
 

@@ -11,7 +11,7 @@ backgroundImage[4] = "images/image5.jpg";
 
 function displayAllImages() {
     for (i=1;i<backgroundImage.length;i++) {
-        document.write("<div class='col-xs-4'><img src=" + backgroundImage[i] + "></div>");
+        document.write("<div class='imglist'><img src=" + backgroundImage[i] + "></div>");
     };
 };
 
